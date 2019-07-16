@@ -2,8 +2,6 @@
 
 > vue-cli@3.x创建的 vue@2.6 + typescript 多项目入口的项目,
 
-> 小程序-创客-身份认证-h5部分，用于嵌入 小程序/第三方客户端
-
 ```
 已知问题：
   1. vue inspect > output.js 导出webpack.config，由于此命令不能传入额外参数，需要手动修改vue.config.js中的项目名称，再进行导出操作
