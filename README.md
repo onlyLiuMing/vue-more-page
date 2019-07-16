@@ -1,18 +1,36 @@
-# vue-text
+# vue-ssr
+
+> vue-cli@3.x创建的 vue@2.6 + typescript 多项目入口的项目,
+
+> 小程序-创客-身份认证-h5部分，用于嵌入 小程序/第三方客户端
+
+```
+已知问题：
+  1. vue inspect > output.js 导出webpack.config，由于此命令不能传入额外参数，需要手动修改vue.config.js中的项目名称，再进行导出操作
+  2. “快速生成脚本”写的比较粗劣，凑合着用吧
+```
 
 ## Project setup
 ```
-yarn install
+yarn
 ```
 
 ### Compiles and hot-reloads for development
 ```
-yarn run serve
+yarn serve --project=<% project_name %>
 ```
 
 ### Compiles and minifies for production
 ```
-yarn run build
+yarn run build --project=<% project_name %>
+```
+### 快速创建项目
+```
+yarn create_project --project=<% project_name %>
+```
+### 快速创建项目page
+```
+yarn create_project --project=<% project_name %> --page=<% page_name %>
 ```
 
 ### Run your tests
